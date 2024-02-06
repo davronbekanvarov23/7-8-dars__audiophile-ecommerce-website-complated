@@ -1,0 +1,27 @@
+header {
+ 
+  padding: 35px 0;
+  background-color: $black;
+}
+
+.heading {
+  display: flex;
+  
+}
+.header__site-logo {
+  margin-right: 197px;
+}
+
+.header__sitenav {
+  margin-right: auto;
+}
+.sitenav__list {
+  display: flex;
+  gap: 34px;
+}
+.sitenav_link {
+  color: $white;
+  letter-spacing: 2px;
+}
+
+.Basket:hover svg path{fill: $btn-bg;}

@@ -1,0 +1,46 @@
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v15-latin-700.woff2") format("woff2");
+}
+
+html {
+  font-size: 62.5%; // 10px
+}
+body {
+  font-family: $main-font-family;
+  @include fonts($body-fs, $body-lh);
+}
+h1 {
+  @include fonts($h1-fs, $h1-lh, $h1-ls);
+}
+h2 {
+  @include fonts($h2-fs, $h2-lh, $h2-ls);
+}
+h3 {
+  @include fonts($h3-fs, $h3-lh, $h3-ls);
+}
+h4 {
+  @include fonts($h4-fs, $h4-lh, $h4-ls);
+}
+h5 {
+  @include fonts($h5-fs, $h5-lh, $h5-ls);
+}
+h6 {
+  @include fonts($h6-fs, $h6-lh, $h6-ls);
+}
+.overline {
+  @include fonts($overline-fs, $overline-lh, $overline-ls);
+}
+.subtitle {
+  @include fonts($subtitle-fs, $subtitle-ls, $subtitle-ls);
+}

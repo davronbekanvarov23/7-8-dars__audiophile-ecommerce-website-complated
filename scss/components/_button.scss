@@ -1,0 +1,46 @@
+.btn-orange,
+.btn-transparent,
+.btn-black {
+  @include common_button;
+}
+
+.btn-orange {
+  @include buttons($white, $btn-bg);
+  text-decoration: none;
+  &:hover {
+    @include buttons_hover($white, $btn-hover);
+  }
+}
+.btn-transparent {
+  @include buttons($black, transparent, $black);
+  text-decoration: none;
+  &:hover {
+    @include buttons_hover($white, $black);
+  }
+}
+.btn-black {
+  @include buttons($white, $black, transparent);
+  text-decoration: none;
+  &:hover {
+    @include buttons_hover($white, $black-btn-hover);
+  }
+}
+
+.shop__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  p {
+    color: $black;
+    opacity: 0.5;
+  }
+}
+
+.btn__add-card {
+  padding: 1.2rem 3rem;
+  background-color: $btn-bg;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
